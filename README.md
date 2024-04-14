@@ -9,7 +9,7 @@ Small collection of useful code snippets for web development.
 
 ## Installation
 
-**[Get The VSCode Extension]()**
+**[Get The VSCode Extension](https://marketplace.visualstudio.com/items?itemName=BrennonDenny.vsc-webbed-snippets)**
 
 ## Docs
 
