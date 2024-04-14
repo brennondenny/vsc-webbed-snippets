@@ -1,19 +1,92 @@
 {
-  "name": "webbed-snippets",
-  "displayName": "webbed-snippets",
-  "description": "",
-  "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.88.0"
-  },
+  "name": "vsc-webbed-snippets",
+  "displayName": "Webbed Snippets",
+  "description": "Simple web dev snippets that are actually useful.",
   "categories": [
     "Snippets"
   ],
+  "version": "0.1.0",
+  "publisher": "BrennonDenny",
+  "repository": "https://github.com/brennondenny/vsc-webbed-snippets",
+  "engines": {
+    "vscode": "^1.88.0"
+  },
+  "icon": "icon.png",
+  "extensionKind": [
+    "ui",
+    "workspace"
+  ],
+  "keywords": [
+    "snippets",
+    "html",
+    "css",
+    "js",
+    "javascript",
+    "ts",
+    "typescript",
+    "react",
+    "node"
+  ],
+  "bugs": {
+    "url": "https://github.com/brennondenny/vsc-webbed-snippets/issues"
+  },
   "contributes": {
     "snippets": [
       {
+        "language": "html",
+        "path": "./snippets/html.json"
+      },
+      {
+        "language": "css",
+        "path": "./snippets/css.json"
+      },
+      {
         "language": "javascript",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets/node.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/jsx.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/react.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/node.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/jsx.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/react.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/node.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/tsx.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/react.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/node.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/tsx.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/react.json"
       }
     ]
   }
