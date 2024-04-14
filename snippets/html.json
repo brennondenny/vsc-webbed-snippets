@@ -57,7 +57,7 @@
 		"prefix": "hmsx",
 		"body": [
 			"        <meta property='twitter:url' content='$1' />",
-            "        <meta property='twitter:card' content='{${2:summary_large_image}' />",
+            "        <meta property='twitter:card' content='${2:summary_large_image}' />",
             "        <meta property='twitter:title' content='$3' />",
             "        <meta property='twitter:description' content='$4' />",
             "        <meta property='twitter:image' content='$5' />"
