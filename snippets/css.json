@@ -1,0 +1,71 @@
+{
+	"css.align.center": {
+		"scope": "css, scss, sass",
+		"prefix": "cac",
+		"body": [
+			"display: flex;",
+			"align-items: center;",
+			"justify-content: center;"
+		],
+		"description": "CSS Flex Center Alignment"
+	},
+	"css.layout.flex": {
+		"scope": "css, scss, sass",
+		"prefix": "clf",
+		"body": [
+			"display: flex;",
+			"align-items: ${1|start, center, end, stretch, baseline|};",
+			"justify-content: ${2|start, center, end, space-around, space-evenly, space-between|};",
+			"flex-wrap: ${3|wrap, nowrap|};",
+			"gap: $4;"
+		],
+		"description": "Flex Container"
+	},
+	"css.layout.grid": {
+		"scope": "css, scss, sass",
+		"prefix": "clg",
+		"body": [
+			"display: grid;",
+			"grid-template-columns: repeat(auto-${1|fill,fit|}, minmax($2, $3));",
+			"grid-auto-rows: $4;",
+			"gap: $5;"
+		],
+		"description": "Grid Container"
+	},
+	"css.reset": {
+		"scope": "css, scss, sass",
+		"prefix": "cr",
+        "body": [
+            "*, *::before, *::after {",
+            "    box-sizing: border-box;",
+            "}",
+            "",
+            "* {",
+            "    margin: 0;",
+            "}",
+            "",
+            "body {",
+            "    line-height: 1.5;",
+            "    -webkit-font-smoothing: antialiased;",
+            "}",
+            "",
+            "img, picture, video, canvas, svg {",
+            "    display: block;",
+            "    max-width: 100%;",
+            "}",
+            "",
+            "input, button, textarea, select {",
+            "    font: inherit;",
+            "}",
+            "",
+            "p, h1, h2, h3, h4, h5, h6 {",
+            "    overflow-wrap: break-word;",
+            "}",
+            "",
+            "#root, #__next {",
+            "    isolation: isolate;",
+            "}"
+        ],
+		"description": "Modern CSS Reset"
+	}
+}

@@ -1,0 +1,67 @@
+{
+	"html.base.struct": {
+		"scope": "html",
+		"prefix": "hbs",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html lang='en'>",
+			"    <head>",
+			"        <meta charset='utf-8' />",
+			"        <meta name='viewport' content='width=device-width' />",
+			"        <link rel='icon' href='public/favicon.svg' type='image/svg+xml' />",
+			"        <link rel='stylesheet' href='styles.css' />",
+			"        <title>$1</title>",
+			"    </head>",
+			"    <body>",
+			"        $2",
+			"    </body>",
+			"</html>"
+		],
+		"description": "HTML base structure"
+	},
+	"html.base.react": {
+		"scope": "html",
+		"prefix": "hbr",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html lang='en'>",
+			"    <head>",
+			"        <meta charset='utf-8' />",
+			"        <meta name='viewport' content='width=device-width' />",
+			"        <link rel='icon' href='public/favicon.svg' type='image/svg+xml' />",
+			"        <title>$1</title>",
+			"    </head>",
+			"    <body>",
+			"        <div id='root'></div>",
+			"",
+			"        <script type='module' src='/src/main.${2:jsx}'></script>",
+			"    </body>",
+			"</html>"
+		],
+		"description": "HTML React base structure"
+	},
+	"html.meta.social.fb": {
+		"scope": "html",
+		"prefix": "hmsf",
+		"body": [
+			"        <meta property='og:url' content='$1' />",
+            "        <meta property='og:type' content='${2:website}' />",
+            "        <meta property='og:title' content='$3' />",
+            "        <meta property='og:description' content='$4' />",
+            "        <meta property='og:image' content='$5' />"
+		],
+		"description": "Social Meta tags for Facebook" 
+	},
+    "html.meta.social.x": {
+		"scope": "html",
+		"prefix": "hmsx",
+		"body": [
+			"        <meta property='twitter:url' content='$1' />",
+            "        <meta property='twitter:card' content='{${2:summary_large_image}' />",
+            "        <meta property='twitter:title' content='$3' />",
+            "        <meta property='twitter:description' content='$4' />",
+            "        <meta property='twitter:image' content='$5' />"
+		],
+		"description": "Social Meta tags for X (Twitter)"
+	}
+}
